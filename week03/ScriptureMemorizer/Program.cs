@@ -1,3 +1,5 @@
+//This is a good program for learning scripture or texts
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
