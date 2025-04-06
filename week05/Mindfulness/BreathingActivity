@@ -1,0 +1,21 @@
+// Breathing Activity
+class BreathingActivity : MindfulnessActivity
+{
+    public BreathingActivity()
+    {
+        name = "Breathing";
+        description = "This activity will help you relax by guiding your breathing.";
+    }
+
+    protected override void RunActivity()
+    {
+        for (int i = 0; i < duration / 6; i++)
+        {
+            Console.WriteLine("Breathe in...");
+            ShowSpinner(3);
+            Console.WriteLine("Breathe out...");
+            ShowSpinner(3);
+        }
+    }
+}
+
