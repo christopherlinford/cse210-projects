@@ -1,21 +1,25 @@
-// Breathing Activity
+
+using System;
+using System.Collections.Generic;
+using System.Threading;
+
 class BreathingActivity : MindfulnessActivity
 {
     public BreathingActivity()
     {
-        name = "Breathing";
-        description = "This activity will help you relax by guiding your breathing.";
+        SetName("Breathing");
+        SetDescription("This activity will help you relax by guiding your breathing.");
     }
 
     protected override void RunActivity()
     {
+        int duration = GetDuration();
         for (int i = 0; i < duration / 6; i++)
         {
             Console.WriteLine("Breathe in...");
-            ShowSpinner(3);
+            Thread.Sleep(3000);
             Console.WriteLine("Breathe out...");
-            ShowSpinner(3);
+            Thread.Sleep(3000);
         }
     }
 }
-

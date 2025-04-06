@@ -1,22 +1,30 @@
-// Listing Activity
+
+using System;
+using System.Collections.Generic;
+using System.Threading;
+
 class ListingActivity : MindfulnessActivity
 {
-    private static readonly List<string> prompts = new() { "Who are people you appreciate?", "What are your personal strengths?" };
+    private static readonly List<string> _prompts = new()
+    {
+        "Who are people you appreciate?",
+        "What are your personal strengths?"
+    };
 
     public ListingActivity()
     {
-        name = "Listing";
-        description = "This activity helps you reflect on positive aspects of life.";
+        SetName("Listing");
+        SetDescription("This activity helps you reflect on positive aspects of life.");
     }
 
     protected override void RunActivity()
     {
         Random rnd = new();
-        Console.WriteLine(prompts[rnd.Next(prompts.Count)]);
-        ShowSpinner(3);
-        
+        Console.WriteLine(_prompts[rnd.Next(_prompts.Count)]);
+        Thread.Sleep(3000);
+
         int count = 0;
-        DateTime endTime = DateTime.Now.AddSeconds(duration);
+        DateTime endTime = DateTime.Now.AddSeconds(GetDuration());
         while (DateTime.Now < endTime)
         {
             Console.Write("Enter an item: ");
@@ -26,4 +34,3 @@ class ListingActivity : MindfulnessActivity
         Console.WriteLine($"You listed {count} items!");
     }
 }
-
