@@ -8,7 +8,7 @@ class Program
         Assignment a1 = new Assignment("George Burns", "Multiplication");
         Console.WriteLine(a1.GetSummary());
 
-        // erived class 
+        // derived class 
         MathAssignment a2 = new MathAssignment("Rob Rodeo", "Fractions", "7.3", "8-19");
         Console.WriteLine(a2.GetSummary());
         Console.WriteLine(a2.GetHomeworkList());

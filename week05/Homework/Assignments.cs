@@ -9,7 +9,7 @@ public class Assignment
         _topic = topic;
     }
 
-    // We will provide Getters for our private member variables so they can be accessed
+    
     
     public string GetStudentName()
     {
