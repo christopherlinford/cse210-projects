@@ -8,7 +8,10 @@ class ListingActivity : MindfulnessActivity
     private static readonly List<string> _prompts = new()
     {
         "Who are people you appreciate?",
-        "What are your personal strengths?"
+        "What are your personal strengths?",
+        "Who are people that you have helped this week?",
+        "When have you felt the Holy Ghost this month?",
+        "Who are some of your personal heroes?"
     };
 
     public ListingActivity()

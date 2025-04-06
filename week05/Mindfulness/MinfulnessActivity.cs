@@ -14,7 +14,7 @@ abstract class MindfulnessActivity
         Console.Clear();
         Console.WriteLine($"Starting {_name} Activity");
         Console.WriteLine(_description);
-        Console.Write("Enter duration in seconds: ");
+        Console.Write("How long in seconds, would you like your session? ");
 
         if (!int.TryParse(Console.ReadLine(), out _duration) || _duration <= 0)
         {

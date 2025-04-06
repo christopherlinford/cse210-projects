@@ -20,7 +20,7 @@ class ReflectionActivity : MindfulnessActivity
     public ReflectionActivity()
     {
         SetName("Reflection");
-        SetDescription("This activity will help you reflect on moments of strength.");
+        SetDescription("This activity will help you reflect on moments of strength. This will help you recognize the power you have in your life.");
     }
 
     protected override void RunActivity()

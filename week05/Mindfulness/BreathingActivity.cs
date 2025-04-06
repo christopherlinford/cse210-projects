@@ -8,7 +8,7 @@ class BreathingActivity : MindfulnessActivity
     public BreathingActivity()
     {
         SetName("Breathing");
-        SetDescription("This activity will help you relax by guiding your breathing.");
+        SetDescription("This activity will help you relax by walking you through breathing in and out slowly.");
     }
 
     protected override void RunActivity()
