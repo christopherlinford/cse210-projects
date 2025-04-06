@@ -10,7 +10,7 @@ public class Assignment
     }
 
     // We will provide Getters for our private member variables so they can be accessed
-    // later both outside the class as well is in derived classes.
+    
     public string GetStudentName()
     {
         return _studentName;
