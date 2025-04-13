@@ -1,0 +1,2 @@
+0
+SimpleGoal|eat 3 fruits|eat 3 fruits a day|10|False
